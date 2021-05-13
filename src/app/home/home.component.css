@@ -1,0 +1,11 @@
+.container{
+    height: 100vh;
+    background-color:sandybrown;
+}
+
+.home-box{
+    border: 5px solid black;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
