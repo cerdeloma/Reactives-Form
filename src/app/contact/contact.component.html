@@ -34,11 +34,12 @@
                             </label>
                         </div>
                     </div>
+                    <app-campo-control-error [mostrarErro]="!signupForm.get('courses').valid" msgErro="Máximo duas escolhas"></app-campo-control-error>
                 </div>    
             </div>
 
             <div class="flex justify-center">
-                <button type="submit">Enviar</button>
+                <button type="submit" [disabled]="!signupForm.valid">Enviar</button>
             </div>
 
         </form>

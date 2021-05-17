@@ -1,5 +1,12 @@
 import { Component, OnInit } from "@angular/core";
-import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
+import { 
+    FormArray, 
+    FormBuilder, 
+    FormControl, 
+    FormGroup, 
+    Validators 
+} from "@angular/forms";
+import { FormValidations } from "../shared/form-validations";
 
 @Component({
     selector: 'app-contact',
@@ -8,7 +15,7 @@ import { FormArray, FormBuilder, FormControl, FormGroup, Validators } from "@ang
 })
 export class ContactComponent implements OnInit { 
     signupForm: FormGroup;
-    courses = ['HTML', 'CSS', 'JS', 'PHP', 'JAVA', 'NODE']
+    courses = ['HTML', 'CSS', 'JS', 'PHP', 'JAVA', 'NODE'];
 
     constructor(private formBuilder: FormBuilder) {}
 
@@ -19,11 +26,12 @@ export class ContactComponent implements OnInit {
             email: [null, [Validators.required, Validators.email]],
             courses: this.buildCourses()
         })
+            
     }
 
     buildCourses(){
         const values = this.courses.map(v => new FormControl(false));
-        return this.formBuilder.array(values)
+        return this.formBuilder.array(values, FormValidations.requiredMinChecebox(2))
     }
 
     getCoursesControls(){
