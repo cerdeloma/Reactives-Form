@@ -1,0 +1,76 @@
+[33mcommit 2499f79b52b2545c834fa22076a3f1d206fbcbf8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: cerdeloma <marcelocerdelo@gmail.com>
+Date:   Sun May 16 21:48:26 2021 -0300
+
+    validação do checkbox
+
+ angular.json                           |  1 [32m+[m
+ src/app/app.module.ts                  |  2 [32m++[m
+ src/app/contact/contact.component.html |  3 [32m++[m[31m-[m
+ src/app/contact/contact.component.ts   | 14 [32m+++++++++++[m[31m---[m
+ src/app/shared                         |  1 [32m+[m
+ 5 files changed, 17 insertions(+), 4 deletions(-)
+
+[33mcommit 66203d6827cc698cd9b47ce1d14619400e0a007f[m
+Author: cerdeloma <marcelocerdelo@gmail.com>
+Date:   Thu May 13 11:45:56 2021 -0300
+
+    recebendo dados do checkbox
+
+ angular.json                           |   10 [32m+[m[31m-[m
+ package-lock.json                      | 1333 [32m+++++++++++++++++++++++++++++++[m[31m-[m
+ package.json                           |    6 [32m+[m
+ src/app/app.component.css              |    6 [32m+[m
+ src/app/app.component.html             |  521 [32m+[m[31m------------[m
+ src/app/app.module.ts                  |   14 [32m+[m[31m-[m
+ src/app/app.routing.module.ts          |   19 [32m+[m
+ src/app/contact/contact.component.css  |   46 [32m++[m
+ src/app/contact/contact.component.html |   47 [32m++[m
+ src/app/contact/contact.component.ts   |   48 [32m++[m
+ src/app/header/header.component.html   |   15 [32m+[m
+ src/app/header/header.component.ts     |    9 [32m+[m
+ src/app/home/home.component.css        |   11 [32m+[m
+ src/app/home/home.component.html       |    5 [32m+[m
+ src/app/home/home.component.ts         |   11 [32m+[m
+ src/styles.css                         |    3 [32m+[m
+ tailwind.config.js                     |   13 [32m+[m
+ webpack.config.js                      |   16 [32m+[m
+ 18 files changed, 1570 insertions(+), 563 deletions(-)
+
+[33mcommit 5092bf84cbf157f9db4a9b83b1003f18a94c2b6e[m
+Author: cerdeloma <marcelocerdelo@gmail.com>
+Date:   Thu Apr 8 20:07:59 2021 -0300
+
+    initial commit
+
+ .browserslistrc                      |    17 [32m+[m
+ .editorconfig                        |    16 [32m+[m
+ .gitignore                           |    46 [32m+[m
+ README.md                            |    27 [32m+[m
+ angular.json                         |   124 [32m+[m
+ e2e/protractor.conf.js               |    37 [32m+[m
+ e2e/src/app.e2e-spec.ts              |    23 [32m+[m
+ e2e/src/app.po.ts                    |    11 [32m+[m
+ e2e/tsconfig.json                    |    13 [32m+[m
+ karma.conf.js                        |    44 [32m+[m
+ package-lock.json                    | 33971 [32m+++++++++++++++++++++++++++++++++[m
+ package.json                         |    45 [32m+[m
+ src/app/app.component.css            |     0
+ src/app/app.component.html           |   519 [32m+[m
+ src/app/app.component.spec.ts        |    31 [32m+[m
+ src/app/app.component.ts             |    10 [32m+[m
+ src/app/app.module.ts                |    16 [32m+[m
+ src/assets/.gitkeep                  |     0
+ src/environments/environment.prod.ts |     3 [32m+[m
+ src/environments/environment.ts      |    16 [32m+[m
+ src/favicon.ico                      |   Bin [31m0[m -> [32m948[m bytes
+ src/index.html                       |    13 [32m+[m
+ src/main.ts                          |    12 [32m+[m
+ src/polyfills.ts                     |    65 [32m+[m
+ src/styles.css                       |     1 [32m+[m
+ src/test.ts                          |    25 [32m+[m
+ tsconfig.app.json                    |    15 [32m+[m
+ tsconfig.json                        |    23 [32m+[m
+ tsconfig.spec.json                   |    18 [32m+[m
+ tslint.json                          |   152 [32m+[m
+ 30 files changed, 35293 insertions(+)
